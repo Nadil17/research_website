@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Documents — Smart Courier Intelligence Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .docs-section { margin-bottom: 48px; }
+    .docs-section-head {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 20px;
+      padding-bottom: 14px; border-bottom: 1px solid var(--border);
+    }
+    .docs-section-head h3 { font-family: var(--font-head); font-size: 1.15rem; font-weight: 700; }
+    .docs-section-head .count {
+      font-family: var(--font-mono); font-size: 11px; color: var(--accent-cyan);
+      background: rgba(0,212,240,0.1); border: 1px solid rgba(0,212,240,0.2);
+      padding: 3px 10px; border-radius: 50px;
+    }
+    .doc-card-link { text-decoration: none; display: block; }
+    .note-box {
+      background: rgba(255,140,66,0.05); border: 1px solid rgba(255,140,66,0.2);
+      border-left: 3px solid var(--accent-orange);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      padding: 16px 20px; display: flex; gap: 12px; align-items: flex-start; margin-bottom: 40px;
+    }
+    .note-box p { font-size: 0.88rem; color: var(--text-secondary); margin: 0; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <div class="nav-logo">SC<br>IP</div>
+      <div class="nav-name">Smart Courier<span>Intelligence Platform</span></div>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="domain.html">Domain</a>
+      <a href="milestones.html">Milestones</a>
+      <a href="documents.html" class="active">Documents</a>
+      <a href="slides.html">Slides</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <div class="theme-toggle-track">
+          <div class="toggle-stars"><span></span><span></span><span></span></div>
+          <div class="theme-toggle-thumb">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21.752 15.002A9.718 9.718 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"/></svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.25a.75.75 0 0 1 .75.75v2.25a.75.75 0 0 1-1.5 0V3a.75.75 0 0 1 .75-.75ZM7.5 12a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM18.894 6.166a.75.75 0 0 0-1.06-1.06l-1.591 1.59a.75.75 0 1 0 1.06 1.061l1.591-1.59ZM21.75 12a.75.75 0 0 1-.75.75h-2.25a.75.75 0 0 1 0-1.5H21a.75.75 0 0 1 .75.75ZM17.834 18.894a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 1 0-1.061 1.06l1.59 1.591ZM12 18a.75.75 0 0 1 .75.75V21a.75.75 0 0 1-1.5 0v-2.25A.75.75 0 0 1 12 18ZM7.758 17.303a.75.75 0 0 0-1.061-1.06l-1.591 1.59a.75.75 0 0 0 1.06 1.061l1.591-1.59ZM6 12a.75.75 0 0 1-.75.75H3a.75.75 0 0 1 0-1.5h2.25A.75.75 0 0 1 6 12ZM6.697 7.757a.75.75 0 0 0 1.06-1.06l-1.59-1.591a.75.75 0 0 0-1.061 1.06l1.59 1.591Z"/></svg>
+          </div>
+        </div>
+      </button>
+    <button class="nav-toggle">☰</button>
+  </div>
+</nav>
+
+<main class="page-wrap">
+  <header class="page-header">
+    <div class="container">
+      <div class="page-header-inner">
+        <div class="breadcrumb"><a href="index.html">Home</a> <span>/</span> Documents</div>
+        <div class="section-label">Project Documentation</div>
+        <h1>Project <span style="color:var(--accent-cyan)">Documents</span></h1>
+        <p>All produced and pending documents for the Smart Courier Intelligence Platform research project, organised by category.</p>
+      </div>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="note-box">
+        <span style="font-size:18px;">ℹ️</span>
+        <p>Documents marked as <span style="color:var(--accent-green)">Available</span> are ready for download. Documents marked as <span style="color:var(--accent-orange)">Pending</span> will be uploaded upon submission. All documents are hosted on the SLIIT CDAP portal.</p>
+      </div>
+
+      <!-- ─ Project Charter ─ -->
+      <div class="docs-section">
+        <div class="docs-section-head">
+          <span style="font-size:20px;">📋</span>
+          <h3>Project Charter</h3>
+          <span class="count">1 Document</span>
+        </div>
+        <div class="doc-grid">
+          <a class="doc-card-link" href="#">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">📄</div>
+              <div class="doc-info">
+                <h4>SCIP — Project Charter</h4>
+                <p>Defines the scope, objectives, key stakeholders, and preliminary plan for the Smart Courier Intelligence Platform project.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF · Group Document</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- ─ Proposal Document ─ -->
+      <div class="docs-section">
+        <div class="docs-section-head">
+          <span style="font-size:20px;">📝</span>
+          <h3>Proposal Document</h3>
+          <span class="count">1 Document</span>
+        </div>
+        <div class="doc-grid">
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:f:/s/CDAPSubmissionCloud/IgAH-bWFsDjHTrlxWQ6-ODqVAVDHXlnwZHI3-FqYHXsgWt8?e=sBkgXq" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">📄</div>
+              <div class="doc-info">
+                <h4>SCIP — Group Research Proposal</h4>
+                <p>Consolidated research proposal covering all four components: Sinhala Voice Agent, Voice Authentication, Route Optimizer, and Multimodal Face Engine.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF · Group Document</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- ─ Checklists ─ -->
+      <div class="docs-section">
+        <div class="docs-section-head">
+          <span style="font-size:20px;">✅</span>
+          <h3>Checklist Documents</h3>
+          <span class="count">4 Documents</span>
+        </div>
+        <div class="doc-grid">
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:f:/s/CDAPSubmissionCloud/IgAhItoSwtz4T7nG_tdI-519AYcqKjQyH8WazRyTh0gss50?e=CamkKu" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">✅</div>
+              <div class="doc-info">
+                <h4>PP1 Checklist — All Components</h4>
+                <p>Progress Presentation 1 compliance checklist for all four research components.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:f:/s/CDAPSubmissionCloud/IgAAXpNykHDeQr_uSrMB2BPxATv48vWW_BoFQ6UsxBiWiXU?e=45OMbE" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">✅</div>
+              <div class="doc-info">
+                <h4>PP2 Checklist — All Components</h4>
+                <p>Progress Presentation 2 compliance checklist and evaluation criteria.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:f:/s/CDAPSubmissionCloud/IgAf-FhUTBp-TYez0gCbHp27AahTXlkifqBgoeDuAbmNuvs?e=SK81yl" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">✅</div>
+              <div class="doc-info">
+                <h4>Ethics Checklist — Component 4</h4>
+                <p>SLIIT Research Ethics compliance checklist for the biometric dataset collection conducted for the Multimodal Face Engine component.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="doc-card-link" href="#">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">✅</div>
+              <div class="doc-info">
+                <h4>Final Submission Checklist</h4>
+                <p>Final assessment submission compliance checklist for dissertation and system deliverables.</p>
+                <div class="doc-status">
+                  <div class="status-dot pending"></div>
+                  <span class="status-text pending">Pending</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- ─ Final Dissertation ─ -->
+      <div class="docs-section">
+        <div class="docs-section-head">
+          <span style="font-size:20px;">📘</span>
+          <h3>Final Dissertation Documents</h3>
+          <span class="count">5 Documents</span>
+        </div>
+        <div class="doc-grid">
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/IQAC4p2CpKpoT5L-S-u1cfR9ATw90bqtxt1AqK8AnTaVYhg?e=nm81YD" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">📘</div>
+              <div class="doc-info">
+                <h4>SCIP — Group Research Dissertation (Main)</h4>
+                <p>The complete group dissertation covering all chapters: Introduction, Literature Review, Methodology, Results, Discussion, Conclusions, and References.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF · 37 pages</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/IQCJS82MB5vDSoplheWSIbvZAZzR2VHx1GSxArfrD8DPJRo?e=Q21c7D" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">🎙️</div>
+              <div class="doc-info">
+                <h4>C1 — Sinhala AI Voice Agent</h4>
+                <p>Individual component dissertation: Automated Sinhala AI Voice Agent for Courier Inquiry Handling. Three-stage iterative pipeline evaluation.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF · Component 1</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/IQDZdl58UAs-RKhS7p3PV_XKAR4mGOEfHY4BaPHyOh8pFkE?e=bYcoHY" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">🔐</div>
+              <div class="doc-info">
+                <h4>C2 — Voice Authentication System</h4>
+                <p>Individual component dissertation: Voice Authentication System for Secure Delivery Verification. Seven-step pipeline with ensemble fusion.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF · Component 2</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/IQBMqGpnENQHSYgmsjdEg3EXATsyLBVvSxjOt85cFim9xcg?e=tzC6aa" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">🗺️</div>
+              <div class="doc-info">
+                <h4>C3 — Route Optimizer</h4>
+                <p>Individual component dissertation: Route Optimizer with Live Weather and Traffic-Aware Delivery Planning. React SPA with Google Maps and Open-Meteo.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF · Component 3</span>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a class="doc-card-link" href="https://mysliit.sharepoint.com/:b:/s/CDAPSubmissionCloud/IQDWj9s92YeLSYKeQk9lN7I1AbB8Gac3oFN6PVORVWnsutE?e=HedFDH" target="_blank" rel="noopener noreferrer">
+            <div class="doc-card">
+              <div class="doc-file-icon pdf">👁️</div>
+              <div class="doc-info">
+                <h4>C4 — Multimodal AI Face Engine</h4>
+                <p>Individual component dissertation: Multimodal AI Face Engine for Secure Identity Verification. ArcFace + WavLM/ECAPA-TDNN fusion with quality-gated decision logic.</p>
+                <div class="doc-status">
+                  <div class="status-dot available"></div>
+                  <span class="status-text available">Available</span>
+                  <span style="color:var(--text-muted);margin-left:8px;font-size:11px;">PDF · Component 4 · IT22298430</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h3>Smart Courier Intelligence Platform</h3>
+          <p>Group Research Dissertation — SLIIT, Sri Lanka, August 2025</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="domain.html">Domain</a></li>
+            <li><a href="milestones.html">Milestones</a></li>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="slides.html">Slides</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Project</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Smart Courier Intelligence Platform — SLIIT Group Research Project</p>
+        <span>FastAPI · React · MySQL · Gemini AI</span>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
