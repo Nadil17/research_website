@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/ultramsg",
+      "destination": "https://api.ultramsg.com/instance164098/messages/chat"
+    }
+  ]
+}

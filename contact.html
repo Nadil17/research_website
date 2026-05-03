@@ -195,7 +195,7 @@
       data.append('to', '+94772733435');
       data.append('body', whatsappMessage);
 
-      fetch('https://api.ultramsg.com/instance164098/messages/chat', {
+      fetch('/api/ultramsg', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
