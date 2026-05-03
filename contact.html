@@ -177,8 +177,44 @@
   if (form) {
     form.addEventListener('submit', (event) => {
       event.preventDefault();
-      alert('Message sent successfully.');
-      form.reset();
+      
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value;
+
+      const whatsappMessage = `*New Contact Form Submission*\n\n*Name:* ${name}\n*Email:* ${email}\n*Subject:* ${subject}\n*Message:*\n${message}`;
+
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalText = submitBtn.innerText;
+      submitBtn.innerText = 'Sending...';
+      submitBtn.disabled = true;
+
+      const data = new URLSearchParams();
+      data.append('token', 'byczdt3c9elffex4');
+      data.append('to', '+94772733435');
+      data.append('body', whatsappMessage);
+
+      fetch('https://api.ultramsg.com/instance164098/messages/chat', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: data
+      })
+      .then(response => response.json())
+      .then(result => {
+        alert('Message sent successfully via WhatsApp!');
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error:', error);
+        alert('Failed to send message. Please try again.');
+      })
+      .finally(() => {
+        submitBtn.innerText = originalText;
+        submitBtn.disabled = false;
+      });
     });
   }
 </script>
